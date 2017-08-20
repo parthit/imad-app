@@ -5,9 +5,8 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var articlesf = {
-    
-var articleone : {
+
+var articleone= {
     
     title: 'work please',
     heading: ' Hello, please kaam kar' ,
@@ -26,7 +25,7 @@ var articleone : {
                    </p>`
     
 };
-var articlethree : { 
+var articlethree={ 
     title :'Article three | Fuck that Krina bitch',
     heading : ' Hello, Krina gand mara' ,
     date :'August 19th, 2017.' ,
@@ -35,7 +34,7 @@ var articlethree : {
                       Bhenchod saali bhadwi ne mera best friend chura liya. Dimag ka bhosda karti hai woh alag. Saali ka kabhi bhala na, meri baddua usko laga. I dont want her succeed at anything that she does. Madharchod saali.
                     </p>`
     };
-var articletwo : { 
+var articletwo= { 
     title :'Article Two | Awesome',
     heading : ' Please work ok?' ,
     date :'August 22th, 2017.' ,
@@ -46,7 +45,7 @@ var articletwo : {
     };
 
 
-};
+
 
 
 function createTemplate (data){
@@ -108,7 +107,8 @@ app.get('/article-two', function(req, res){
 });
 
 app.get('/article-three', function(req, res){
-     res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+    //  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
+    res.send(createTemplate(articlethree))
 });
 
 app.get('/ui/style.css', function (req, res) {
