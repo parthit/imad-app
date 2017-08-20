@@ -6,12 +6,13 @@ var app = express();
 app.use(morgan('combined'));
 
 
+    
 var articleone = {
     
-    title :'Article one | TAB PE ATTA HAI',
-    heading : ' Hello, please kaam kar' ,
-    date :'August 20th, 2017.' ,
-    content : `
+    title: 'work please',
+    heading: ' Hello, please kaam kar' ,
+    date : 'August 20th, 2017.' ,
+    content:`
                     <p>
                         This is prayers to get you to work.This is prayers to get you to work.This is prayers to get you to work.This is prayers to get you to work.This is prayers to get you to work.This is prayers to get you to work.This is prayers to get you to work.
                     </p>
@@ -22,9 +23,29 @@ var articleone = {
                     
                      <p>
                          This is prayers to get you to work. This is prayers to get you to work. This is prayers to get you to work. This is    prayers to get you to work.This is prayers to get you to work.This is prayers to get you to work.This is prayer to get you to work.
-                    </p>`
+                   </p>`
     
 };
+var articlethree = { 
+    title :'Article three | Fuck that Krina bitch',
+    heading : ' Hello, Krina gand mara' ,
+    date :'August 19th, 2017.' ,
+    content : `
+                    <p>
+                      Bhenchod saali bhadwi ne mera best friend chura liya. Dimag ka bhosda karti hai woh alag. Saali ka kabhi bhala na, meri baddua usko laga. I dont want her succeed at anything that she does. Madharchod saali.
+                    </p>`
+    };
+var articletwo ={ 
+    title :'Article Two | Awesome',
+    heading : ' Please work ok?' ,
+    date :'August 22th, 2017.' ,
+    content : `
+                    <p>
+                       Please work, i really need you to. Please kaam karna ok? thanks.
+                    </p>`
+    };
+
+
 
 function createTemplate (data){
 var title = data.title;
@@ -71,7 +92,6 @@ var htmlTemplate = `<html>
 }
 
 
-
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -81,7 +101,8 @@ app.get('/article-one', function(req, res){
 });
 
 app.get('/article-two', function(req, res){
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
+    res.send(createTemplate (articletwo));
+    // res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
 
 app.get('/article-three', function(req, res){
