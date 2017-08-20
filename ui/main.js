@@ -7,8 +7,10 @@ element.innerHTML = 'Naya text daala bhaiiii woh bhi saala java script mai !';
 
 //moving the image
 
-var img = document.getElementById('fotu');
+var img = document.getElementById('madi');
 img.onclick = function () {
-    img.style.marginLeft = '100 px';
+    
+    var interval = setInterval(moveLeft, 100);
+    img.style.marginLeft = '100px';
     
 };
