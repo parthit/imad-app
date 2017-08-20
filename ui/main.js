@@ -6,11 +6,18 @@ element.innerHTML = 'Naya text daala bhaiiii woh bhi saala java script mai !';
 
 
 //moving the image
+var marginLeft = 0;
+
+function moveRight () {
+    marginLeft = marginLeft + 10;
+    img.style.marginLeft = marginLeft + 'px';
+}
+
 
 var img = document.getElementById('madi');
 img.onclick = function () {
     
-    var interval = setInterval(moveLeft, 100);
-    img.style.marginLeft = '100px';
+    var interval = setInterval(moveRight, 100);
+    
     
 };
