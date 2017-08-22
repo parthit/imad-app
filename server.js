@@ -27,12 +27,12 @@ var articles = {
     
 },
 'article-three':{ 
-    title :'Article three | Fuck that Krina bitch',
-    heading : ' Hello, Krina gand mara' ,
+    title :'Article three | Humans are awesome',
+    heading : ' Hello humans, I love you.' ,
     date :'August 19th, 2017.' ,
     content : `
                     <p>
-                      Bhenchod saali bhadwi ne mera best friend chura liya. Dimag ka bhosda karti hai woh alag. Saali ka kabhi bhala na, meri baddua usko laga. I dont want her succeed at anything that she does. Madharchod saali.
+                      Hello, this is me, a very orderly human being. I think that humans need to work together and bring about world peace. This is our home, we need to save it. Thank you.
                     </p>`
     },
  'article-two': { 
