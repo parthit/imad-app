@@ -16,48 +16,7 @@ var config =
 var app = express();
 app.use(morgan('combined'));
 
-var articles = {
 
- 'article-one': {
-    
-    title: 'work please',
-    heading: ' Hello, please kaam kar' ,
-    date : 'August 20th, 2017.' ,
-    content:`
-                    <p>
-                        This is prayers to get you to work.This is prayers to get you to work.This is prayers to get you to work.This is prayers to get you to work.This is prayers to get you to work.This is prayers to get you to work.This is prayers to get you to work.
-                    </p>
-                    
-                     <p>
-                         This is prayers to get you to work. This is prayers to get you to work. This is prayers to get you to work. This is    prayers to get you to work.This is prayers to get you to work.This is prayers to get you to work.This is prayer to get you to work.
-                    </p>
-                    
-                     <p>
-                         This is prayers to get you to work. This is prayers to get you to work. This is prayers to get you to work. This is    prayers to get you to work.This is prayers to get you to work.This is prayers to get you to work.This is prayer to get you to work.
-                   </p>`
-    
-},
-'article-three':{ 
-    title :'Article three | Humans are awesome',
-    heading : ' Hello humans, I love you.' ,
-    date :'August 19th, 2017.' ,
-    content : `
-                    <p>
-                      Hello, this is me, a very orderly human being. I think that humans need to work together and bring about world peace. This is our home, we need to save it. Thank you.
-                    </p>`
-    },
- 'article-two': { 
-    title :'Article Two | Awesome',
-    heading : ' Please work ok?' ,
-    date :'August 22th, 2017.' ,
-    content : `
-                    <p>
-                       Please work, i really need you to. Please kaam karna ok? thanks.
-                    </p>`
-    }
-
-
-};
 
 
 function createTemplate (data){
