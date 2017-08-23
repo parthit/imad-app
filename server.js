@@ -143,8 +143,6 @@ app.get('/articles/:articleName', function(req, res){
         }
     });
     
-    
-    res.send(createTemplate(articleData));
 });
 
 
