@@ -21,49 +21,49 @@ app.use(morgan('combined'));
 
 
 
-// function createTemplate (data){
-// var title = data.title;
-// var date = data.date;
-// var heading = data.heading;
-// var content = data.content;
+function createTemplate (data){
+var title = data.title;
+var date = data.date;
+var heading = data.heading;
+var content = data.content;
 
-// var htmlTemplate = `<html>
+var htmlTemplate = `<html>
 
-//             <head> 
-//             <title>
-//                 ${title}
-//             </title>
-//             <meta name="view port" content = "width=device-width, initial-scale=1">
-//               <link href="/ui/style.css" rel="stylesheet" />
+            <head> 
+            <title>
+                ${title}
+            </title>
+            <meta name="view port" content = "width=device-width, initial-scale=1">
+              <link href="/ui/style.css" rel="stylesheet" />
             
-//             </head>
+            </head>
             
             
             
-//             <body>
-//                 <div class ="element">
-//                         <div>
-//                             <a href='/'>Home </a>
-//                         </div>
-//                         <hr/>
+            <body>
+                <div class ="element">
+                        <div>
+                            <a href='/'>Home </a>
+                        </div>
+                        <hr/>
                         
-//                         <h3> ${heading}</h3>
-//                         <div>
-//                             ${date.toDateString()}
-//                         </div>
+                        <h3> ${heading}</h3>
+                        <div>
+                            ${date.toDateString()}
+                        </div>
                         
-//                         <div>
-//                               ${content}
-//                         </div>
-//                 </div>
-//             </body>
-//             </html>
+                        <div>
+                              ${content}
+                        </div>
+                </div>
+            </body>
+            </html>
             
             
-//             `;
-//             return htmlTemplate;
+            `;
+            return htmlTemplate;
     
-// }
+}
 
 
 function hash (input, salt){
