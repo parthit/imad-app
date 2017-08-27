@@ -2,8 +2,8 @@ console.log('Loaded!');
 
 var element = document.getElementById('main-text');
 
-element.innerHTML = 'Why isnt this line added ?';
-element.innerHTML = 'This is a second line that I have added in java script.';
+
+// element.innerHTML = 'This is a second line that I have added in java script.';
 
 //moving the image
 var marginLeft = 0;
