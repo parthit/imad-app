@@ -1,9 +1,5 @@
 console.log('Loaded!');
 
-var element = document.getElementById('main-text');
-
-
-// element.innerHTML = 'This is a second line that I have added in java script.';
 function loadLoginForm () {
     var loginHtml = `
         <h3>Login/Register to unlock awesome features</h3>
