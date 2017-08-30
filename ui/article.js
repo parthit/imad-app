@@ -53,7 +53,7 @@ function loadLogin () {
         }
     };
     
-    request.open('GET', '/check-login', true);
+    request.open('GET', '/check-login');
     request.send(null);
 }
 
