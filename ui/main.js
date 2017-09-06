@@ -1,4 +1,3 @@
-console.log('Loaded!');
 
 function loadLoginForm () {
     var loginHtml = `
