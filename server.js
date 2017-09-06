@@ -233,6 +233,6 @@ app.get('/ui/:fileName', function (req, res) {
 
 
 var port = 80; // Use 8080 for local development because you might already have apache running on 80
-app.listen(port, function () {
+app.listen(80, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
