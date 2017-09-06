@@ -1,7 +1,3 @@
---
--- Name: article; Type: TABLE; Schema: public; Owner:  parthitpatel
---
-
 CREATE TABLE article (
     id integer NOT NULL,
     title text NOT NULL,
@@ -11,7 +7,7 @@ CREATE TABLE article (
 );
 
 --
--- Name: article_id_seq; Type: SEQUENCE; Schema: public; Owner:  parthitpatel
+-- Name: article_id_seq; Type: SEQUENCE; Schema: public; Owner: parthitpatel
 --
 
 CREATE SEQUENCE article_id_seq
@@ -22,7 +18,7 @@ CREATE SEQUENCE article_id_seq
     CACHE 1;
 
 --
--- Name: comment; Type: TABLE; Schema: public; Owner:  parthitpatel
+-- Name: comment; Type: TABLE; Schema: public; Owner: parthitpatel
 --
 
 CREATE TABLE comment (
@@ -35,7 +31,7 @@ CREATE TABLE comment (
 
 
 --
--- Name: comment_id_seq; Type: SEQUENCE; Schema: public; Owner:  parthitpatel
+-- Name: comment_id_seq; Type: SEQUENCE; Schema: public; Owner: parthitpatel
 --
 
 CREATE SEQUENCE comment_id_seq
@@ -47,7 +43,7 @@ CREATE SEQUENCE comment_id_seq
 
 
 --
--- Name: user; Type: TABLE; Schema: public; Owner:  parthitpatel
+-- Name: user; Type: TABLE; Schema: public; Owner: parthitpatel
 --
 
 CREATE TABLE "user" (
@@ -58,7 +54,7 @@ CREATE TABLE "user" (
 
 
 --
--- Name: user_id_seq; Type: SEQUENCE; Schema: public; Owner:  parthitpatel
+-- Name: user_id_seq; Type: SEQUENCE; Schema: public; Owner: parthitpatel
 --
 
 CREATE SEQUENCE user_id_seq
@@ -70,27 +66,27 @@ CREATE SEQUENCE user_id_seq
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner:  parthitpatel
+-- Name: id; Type: DEFAULT; Schema: public; Owner: parthitpatel
 --
 
 ALTER TABLE ONLY article ALTER COLUMN id SET DEFAULT nextval('article_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner:  parthitpatel
+-- Name: id; Type: DEFAULT; Schema: public; Owner: parthitpatel
 --
 
 ALTER TABLE ONLY comment ALTER COLUMN id SET DEFAULT nextval('comment_id_seq'::regclass);
 
 
 --
--- Name: id; Type: DEFAULT; Schema: public; Owner:  parthitpatel
+-- Name: id; Type: DEFAULT; Schema: public; Owner: parthitpatel
 --
 
 ALTER TABLE ONLY "user" ALTER COLUMN id SET DEFAULT nextval('user_id_seq'::regclass);
 
 --
--- Name: article_id; Type: CONSTRAINT; Schema: public; Owner:  parthitpatel
+-- Name: article_id; Type: CONSTRAINT; Schema: public; Owner: parthitpatel
 --
 
 ALTER TABLE ONLY article
@@ -106,7 +102,7 @@ ALTER TABLE ONLY article
 
 
 --
--- Name: comment_id; Type: CONSTRAINT; Schema: public; Owner:  parthitpatel
+-- Name: comment_id; Type: CONSTRAINT; Schema: public; Owner: parthitpatel
 --
 
 ALTER TABLE ONLY comment
@@ -114,7 +110,7 @@ ALTER TABLE ONLY comment
 
 
 --
--- Name: user_id; Type: CONSTRAINT; Schema: public; Owner:  parthitpatel
+-- Name: user_id; Type: CONSTRAINT; Schema: public; Owner: parthitpatel
 --
 
 ALTER TABLE ONLY "user"
@@ -122,7 +118,7 @@ ALTER TABLE ONLY "user"
 
 
 --
--- Name: user_username; Type: CONSTRAINT; Schema: public; Owner:  parthitpatel
+-- Name: user_username; Type: CONSTRAINT; Schema: public; Owner: parthitpatel
 --
 
 ALTER TABLE ONLY "user"
