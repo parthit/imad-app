@@ -22,6 +22,9 @@ app.use(session({
     cookie: { maxAge: 1000 * 60 * 60 * 24 * 30}
 }));
 
+
+
+
 function createTemplate (data) {
     var title = data.title;
     var date = data.date;
